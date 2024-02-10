@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/CSS/style.css">
+    <link rel="stylesheet" href="./static/CSS/topnav.css">
+    <title>Mon portfolio flask</title>
+</head>
+
+<body>
+
+
+    <header class="main-header d-flex p-1 bck-color jc-c">
+
+        <nav class="menu  f-wrap">
+            <a class="menu__link p-1" href="index">Accueil</a>
+            <a class="menu__link p-1" href="projets">Projets</a>
+            <a class="menu__link p-1" href="Compétences">Compétences</a>
+            <a class="menu__link p-1" href="contact">Contact</a>
+            
+        </nav>
+        
+    </header>
+    <main>
+        <section class ="d-flex f-wraprev txt-center bck-color ">
+            <div class= "f--col g-1 m-auto p-2">
+                <h1>Bienvenu sur le portfolio de :</h1>
+                <h2>Brian Taylor</h2>
+                <a class="menu__link p-1" href="https://www.linkedin.com/in/brian-taylor-3800b517a"></a>
+                <a class="menu__link p-1" href="https://github.com/iraz17"></a>
+               
+            </div>
+            <div class="m-auto p-2">
+                <img class=" d-block card__img " src="./static/img/la_photo.jpg" alt=""> 
+            </div>
+            
+        </section>
+        
+        <section>
+            <div class="d-flex jc-c p-3">
+                <h1>Projets</h1>
+            </div>
+            <div class=" d-flex f-wrap jc-c">
+                <div id="block" class="radius  shadow ">
+                    <img class= "img_block"src="./static/img/page_accueil1.png" alt="">
+                    <h3>Projet de formation web from Scratch</h3>
+                    <p> Un site crée from scratch. Site e-commerce pour vendre des vêtements. Un crud a été réaliser côté administrateur. Une boutique et un panier a été réalisé.</p>
+                    
+                    <div>
+                        <h3>Technologie:</h3>
+                        <p> bootstrap</p>
+                    </div>
+                </div>
+                <div id="block" class="radius  shadow ">
+                    <img src="./static/img/Avaelys.png" alt="">
+                    <h3> Page accueil immobillier</h3>
+                    <p> Site annonce immobilière fait comme exercice.</p>
+                    <div>
+                        <h3>Technologie:</h3>
+                        <p>Jquery</p>
+                    </div>
+                </div>
+                <div id="block" class="radius  shadow ">
+                    <img src="./static/img/Wethio projet.png" alt="">
+                    <h3>Site Article</h3>
+                    <p>Page web simple pour faire un article sur un projet. Le but étant d'être sur la première page google. Travail sur le SEO sur les balises meta.</p>
+                    <div>
+                        <h3>Technologie:</h3>
+                        <p>Wordpress</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    
+        <section>
+            <div class="d-flex jc-c p-3" ><H2>Stacks</H2></div>
+            <div class="d-flex f-wrap projet txt-center jc-se">
+                
+                <div class="f--col post-d p-1 m-1 ">
+                    <h3>Front-end</h3>
+                    <p class="txt-center"><img class="logo" src="../static/img/reactjs.png"  alt="">react-js</p>
+                    <p><img class="logo" src="../static/img/bootstrap.jpeg" alt="">Bootstrap</p>
+                    <p><img class="logo" src="../static/img/Jquery.png" alt="">Jquery</p>
+                </div>
+                <div class="f--col post-d p-1 m-1">
+                    <h3>Back-end</h3>
+                    <p><img class="logo" src="../static/img/django.png" alt="">Django</p>
+                    <p><img class="logo" src="../static/img/postgre.png" alt="">Postgresql</p>
+                </div>
+                <div class="f--col post-d p-1 m-1">
+                    <h3>Other</h3>
+                    <p><img class="logo" src="../static/img/figma.png" alt="">Figma</p>
+                    <p><img class="logo" src="../static/img/github.png" alt="">Github</p>
+                    <p><img class="logo" src="../static/img/wordpress.png" alt="">Wordpress</p>
+                </div>
+            </div>
+            </div>
+            
+        </section>
+        
+    </main>
+    <footer class="bck-color">
+        <form class="bsz-bb " action="/sendemail/" method="POST"> 
+            <div class="p-1" > 
+                <strong>Contactez-moi</strong> 
+            </div> 
+            <div class=" p-1"> 
+
+                <div class="input-group"> 
+                    <label for="nom">Nom</label>
+                    <span class="input-group-addon"><i
+                        class="fa fa-user-circle"></i></span> 
+                    <input class=" form-control" type="text" 
+                            name="name" placeholder="Nom"
+                    required="required" /> 
+                </div> 
+            </div> 
+             
+            <div class=" p-1"> 
+                <div class="input-group"> 
+                    <label for="email">email</label>
+                    <span class="input-group-addon"><i
+                        class="fa fa-envelope"></i></span> 
+                    <input class="form-control" type="email" 
+                            name="_replyto" placeholder="E-mail"
+                    required="required" /> 
+                </div> 
+            </div> 
+            <div class="p-1"> 
+                <div class="form-group"> 
+                    <label for="message">message</label>
+                    <textarea class="form-control" name="message" 
+                            placeholder="Votre message"
+                    required="required"></textarea> 
+                </div> 
+            </div> 
+            <div class="p-1"> 
+                <button class="but" type="submit"> 
+                    Envoyer
+                </button>  
+            </div> 
+            </form>
+        </footer>
+
+
+    <script src="../static/JS/jquery.js"></script>
+    <script src="../static/JS/script.js "></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+*ANCHOR MOBILE*/
+
+.menu {
+    display: none;
+}
+
+.menu__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--sky-a12);
+    transition: color 500ms;
+}
+
+.menu__link:hover {
+    color: var(--primary);
+}
+
+
+
+
+.open {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--dark);
+    display: block;
+    position: absolute;
+    top: var(--header-height) ;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/*ANCHOR DESKTOP*/
+@media screen and (min-width: 600px) {
+
+    .menu {
+        display: flex;
+    }
+}
