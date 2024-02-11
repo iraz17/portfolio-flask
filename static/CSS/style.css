@@ -58,7 +58,7 @@ h3,
 h4,
 h5,
 h6,
-p {
+p, .logo {
     margin: 1rem 0;
 }
 
@@ -127,12 +127,12 @@ p {
 .post-d
 {
     width: 150px;
-    height: 250px;
+    height: 270px;
 }
 
 .logo{
-    width:25px;
-    
+    width:25%;
+    height:25%;
 }
 
 /*ANCHOR FLEX Items*/
@@ -157,7 +157,7 @@ p {
     padding: 5rem 0;
 }
 .p-3{
-    padding: 5rem 0 2rem 0;
+    padding: 2rem 0;
 }
 .m-1{
     margin: 2rem;
@@ -188,8 +188,11 @@ p {
     transition: all 1s;
   }
 
-#block,h3, p{
-    padding: 10px 2% 1px 2%;
+#block, p {
+    padding: 0 10px;
+}
+#space{
+    padding-bottom: 5rem; 
 }
 .radius
 {
@@ -218,19 +221,24 @@ button{
     height: 25px;
     width: 75px;
 }
+
 @media screen and (max-width: 1024px) {
   #block
 {
     width: 97% !important;
     
   }
+
 }
 
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .p-2{
         padding: 10rem 0;
     }
-    section{
+    #space{
         padding-bottom: 10rem; 
     }
+    
   }
+
+    
